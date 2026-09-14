@@ -4,12 +4,12 @@
 
 I build tools for administering systems, controlling network access, and simplifying technical workflows. My focus is predictable operation, explicit changes, and recoverability.
 
-![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=000000)
-![Windows](https://img.shields.io/badge/Windows-0078D4?logo=windows&logoColor=white)
-![Tauri](https://img.shields.io/badge/Tauri-24C8DB?logo=tauri&logoColor=white)
-![OPNsense](https://img.shields.io/badge/OPNsense-D94F00?logo=opnsense&logoColor=white)
+[![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white)](https://rust-lang.org/)
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=000000)](https://www.kernel.org/)
+[![Windows](https://img.shields.io/badge/Windows-0078D4?logo=windows&logoColor=white)](https://www.microsoft.com/windows)
+[![Tauri](https://img.shields.io/badge/Tauri-24C8DB?logo=tauri&logoColor=white)](https://v2.tauri.app/)
+[![OPNsense](https://img.shields.io/badge/OPNsense-D94F00?logo=opnsense&logoColor=white)](https://opnsense.org/)
 
 ## Selected projects
 
