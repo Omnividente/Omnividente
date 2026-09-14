@@ -1,8 +1,8 @@
 # Omnividente
 
-**Infrastructure · Systems · Networking · Automation**
+**Infrastructure & automation · Windows/Linux · Networking**
 
-Building practical tools for infrastructure, desktop workflows and system administration.
+I build tools for administering systems, controlling network access, and simplifying technical workflows. My focus is predictable operation, explicit changes, and recoverability.
 
 ![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
@@ -11,29 +11,46 @@ Building practical tools for infrastructure, desktop workflows and system admini
 ![Tauri](https://img.shields.io/badge/Tauri-24C8DB?logo=tauri&logoColor=white)
 ![OPNsense](https://img.shields.io/badge/OPNsense-D94F00?logo=opnsense&logoColor=white)
 
-## What I work on
-
-I build tools around real operational problems rather than technology demos. My current work is focused on infrastructure, Windows/Linux environments, networking, deployment automation and desktop utilities.
-
-- **Infrastructure & systems** — Windows, Linux, remote administration and operational tooling
-- **Networking** — OPNsense, firewall workflows, client access and bandwidth control
-- **Automation** — deployment, bootstrap and process-management utilities
-- **Desktop engineering** — native and cross-platform applications for technical workflows
-- **AI-assisted development** — tools that make terminal and coding-agent workflows easier to operate
-
 ## Selected projects
 
-| Project | What it does | Stack |
-|---|---|---|
-| **[OMP Desktop](https://github.com/Omnividente/omp-desktop)** | Cross-platform desktop client for Oh My Pi with projects, session history and native PTY terminals | Rust · Tauri · React · Windows · Linux |
-| **[OPNsense Client Control](https://github.com/Omnividente/opnsense-client-control)** | Auditable per-client network access and bandwidth management for OPNsense | OPNsense · FreeBSD · PHP · Networking |
-| **[RustDesk Bootstrap](https://github.com/Omnividente/rustdesk-bootstrap)** | Bootstrap installer for deploying and configuring RustDesk in Windows environments | Rust · Windows · Deployment |
-| **[PyCombiner](https://github.com/Omnividente/PyCombiner)** | Windows application for launching, monitoring and managing scripts and processes from one interface | Python · PySide6 · Windows · Automation |
+### [OMP Desktop](https://github.com/Omnividente/omp-desktop)
+
+A desktop workspace for [Oh My Pi](https://github.com/can1357/oh-my-pi), bringing projects, session history, and native PTY terminals together on Windows and Linux.
+
+**Engineering focus:** process lifecycle, session integrity, and signed update delivery.
+
+*Rust · Tauri · React* · [Releases](https://github.com/Omnividente/omp-desktop/releases/latest) · [Update verification](https://github.com/Omnividente/omp-desktop/actions/workflows/updater-e2e.yml)
+
+### [OPNsense Client Control](https://github.com/Omnividente/opnsense-client-control)
+
+Per-client network access and bandwidth management using native OPNsense firewall and traffic-shaping objects.
+
+**Engineering focus:** preview before apply, conflict detection, configuration rollback, and an audit trail. Platform compatibility is documented rather than assumed.
+
+*PHP · OPNsense · FreeBSD* · [Usage and compatibility](https://github.com/Omnividente/opnsense-client-control/blob/main/docs/USAGE_RU.md)
+
+### [PyCombiner](https://github.com/Omnividente/PyCombiner)
+
+A Windows application for launching scripts, monitoring logs, and managing processes. Workloads can start before user login and be monitored through the desktop interface afterward.
+
+**Engineering focus:** headless/GUI coordination, bounded logs, and process-tree cleanup.
+
+*Python · PySide6 · Windows* · [Releases](https://github.com/Omnividente/PyCombiner/releases/latest) · [English documentation](https://github.com/Omnividente/PyCombiner/blob/master/README.en.md)
+
+### [RustDesk Bootstrap](https://github.com/Omnividente/rustdesk-bootstrap)
+
+A Windows bootstrap installer for repeatable RustDesk deployment with preconfigured server settings and local installer support.
+
+**Engineering focus:** deployment on existing Windows environments, including offline installation and x86/x64 systems.
+
+*Rust · Windows · Deployment* · [Setup and constraints](https://github.com/Omnividente/rustdesk-bootstrap#en)
 
 ## Engineering approach
 
-I prefer tools that are easy to understand, safe to operate and useful in everyday administration. For infrastructure-facing software, I value explicit changes, predictable behavior, rollback paths and clear operational boundaries.
+- **Make changes explicit.** Separate configuration from application, show the intended changes, and surface conflicts instead of silently overwriting them.
+- **Design for recovery.** Preserve user data, handle process failures, and document rollback paths where they apply.
+- **Verify at the operating boundary.** Use the target platform and real workflows to check behavior; distinguish automated checks from runtime acceptance and state what remains unverified.
 
----
+## Contact
 
-*Practical infrastructure and system tooling.*
+[Telegram: @Omnividente](https://t.me/Omnividente) — infrastructure tooling, deployment automation, and project feedback.
